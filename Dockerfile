@@ -8,7 +8,7 @@ ENV container docker
 ENV ansible_packages "ansible"
 
 RUN dnf makecache \
-    && dnf -y install rpm centos-release epel-release initscripts \
+    && dnf -y install rpm epel-release initscripts \
     && dnf -y update \
     && dnf -y install \
         sudo \
